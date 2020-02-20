@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {FroalaEditorModule, FroalaViewModule} from 'angular-froala-wysiwyg';
+import {GridAllModule} from '@syncfusion/ej2-angular-grids';
+import {TranslateModule} from '@ngx-translate/core';
+import {MatButtonModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -12,9 +14,8 @@ import {FroalaEditorModule, FroalaViewModule} from 'angular-froala-wysiwyg';
   imports: [
     BrowserModule,
     AppRoutingModule,
-
-    FroalaEditorModule.forRoot(),
-    FroalaViewModule.forRoot()
+    GridAllModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
